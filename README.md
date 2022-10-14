@@ -1,2 +1,3 @@
 # MyAssignments
- 'Layouts' project involves the use of Kotlin and Android Studio to prepare an app that can explain the basic difference between relative and constraint layouts.
+
+The main screen comprises of two buttons which takes you to different screens. Two similar figures have been made, one using relative layout and the other using constraint layout, to point out the basic difference between the two layouts.
