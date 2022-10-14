@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Layouts</string>
+    <string name="main">CLICK TO SURF</string>
+    <string name="btn1">Relative Layout</string>
+    <string name="btn2">Constraint Layout</string>
+    <string name="satellites">Satellites</string>
+    <string name="flights">Flights</string>
+    <string name="rovers">Rovers</string>
+    <string name="oneway">One Way</string>
+    <string name="traveller">1 Traveller</string>
+    <string name="btn3">Activity-Fragment Interface</string>
+    <string name="txtdca">DCA</string>
+    <string name="txtmars">MARS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="fragmentHead">FRAGMENT ACTIVITY</string>
+</resources>

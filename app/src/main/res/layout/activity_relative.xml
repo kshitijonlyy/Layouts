@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/ic_relative" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/satellites" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:src="@drawable/ic_relative" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/flights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/ic_relative" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rovers" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dca"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/linear1"
+            android:layout_marginLeft="@dimen/marginMain"
+            android:background="@android:color/holo_red_dark" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignTop="@id/mars"
+            android:layout_alignBottom="@id/mars"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="-20dp"
+            android:layout_marginEnd="-20dp"
+            android:layout_toStartOf="@id/mars"
+            android:layout_toEndOf="@id/dca"
+            android:elevation="@dimen/marginMain"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow" />
+
+        <ImageView
+            android:id="@+id/mars"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/linear1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/marginMain"
+            android:background="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/txtdca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear1"
+            android:layout_alignStart="@+id/dca"
+            android:layout_alignEnd="@+id/dca"
+            android:layout_alignBottom="@+id/dca"
+            android:layout_margin="40dp"
+            android:text="@string/txtdca"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtmars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear1"
+            android:layout_alignStart="@+id/mars"
+            android:layout_alignEnd="@+id/mars"
+            android:layout_alignBottom="@+id/mars"
+            android:layout_margin="37dp"
+            android:text="@string/txtmars"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/oneway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dca"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/teal_200"
+            android:paddingVertical="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:text="@string/oneway"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dca"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/oneway"
+            android:background="@color/teal_200"
+            android:paddingVertical="5.5dp" />
+
+        <TextView
+            android:id="@+id/traveller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oneway"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/teal_200"
+            android:paddingVertical="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="@string/traveller"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</layout>
